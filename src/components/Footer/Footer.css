@@ -1,3 +1,166 @@
 .footer {
-    flex-grow: 0;
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.footer__inner {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    color: #FFF;
+    gap: 90px;
+}
+
+.footer__meta {
+    flex-basis: 30%;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.footer__logoCircle {
+    position: relative;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.footer__logoCircle::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5B9BF3;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    content: "T";
+}
+
+.footer__logo > span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer__desc,
+.footer__copy {
+    font-weight: 300;
+}
+
+.footer__desc {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0 0 30px 0;
+}
+
+.footer__copy {
+    font-size: 16px;
+    line-height: 175%;
+    margin: 0;
+}
+
+.footer__infos {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer__infoName {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.footer__infoLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__infoLink {
+    margin-bottom: 10px;
+}
+
+.footer__infoLink:last-child {
+    margin-bottom: 0;
+}
+
+.footer__infoLink a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 0;
+}
+
+.footer__infoLink a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        padding: 50px 0;
+        gap: 50px;
+    }
+
+    .footer__logo {
+        gap: 10px;
+    }
+
+    .footer__logoCircle {
+        width: 39px;
+        height: 39px;
+    }
+
+    .footer__logoCircle::after {
+        font-size: 22px;
+    }
+    
+    .footer__inner > * {
+        flex-basis: 100%;
+    }
+
+    .footer__logo {
+        margin-bottom: 15px;
+    }
+
+    .footer__desc {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__inner {
+        gap: 40px;
+    }
+
+    .footer__logo
+
+    .footer__logo > span {
+        font-size: 20px;
+    }
+
+    .footer__desc {
+        font-size: 16px;
+    }
+
+    .footer__copy {
+        font-size: 14px;
+    }
+
+    .footer__infos {
+        flex-wrap: wrap;
+    }
+
+    .footer__infos > * {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }

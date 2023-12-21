@@ -11,6 +11,7 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
+    text-align: center;
     line-height: 155%;
     margin: 0;
 }
@@ -42,15 +43,18 @@
 }
 
 .services__btn {
+    display: block;
     color: #458FF6;
     font-size: 18px;
     font-weight: 700;
     line-height: 150%;
+    margin: 0 auto;
     padding: 15px 50px;
     outline: none;
     border: 1px solid #458FF6;
     border-radius: 55px;
     background-color: transparent;
+    text-align: center;
     cursor: pointer;
     transition: all .25s ease;
 }

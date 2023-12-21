@@ -11,9 +11,13 @@
 }
 
 .greeting {
-    display: inline-flex;
-    place-items: center;
     margin-bottom: 150px;
+}
+
+.greeting__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -60,6 +64,7 @@
     height: 56px;
     border-radius: 55px;
     background: #458FF6;
+    text-align: center;
 
     margin-top: 48px;
 }

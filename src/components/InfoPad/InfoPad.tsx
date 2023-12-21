@@ -1,33 +1,41 @@
 import './InfoPad.css';
+import Container from '../Container/Container';
 
 function InfoPad() {
     return (
-        <>
-            <div className="infoPad">
-                <div className="pad1">
-                    <img className="img1" src="/src/assets/providers.png" />
-                    <div className="info1">
-                        <div className="title1">Leading healthcare providers</div>
-                        <div className="secondary1">We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</div>
-                        <div className="button1">Learn more</div>
-                    </div>
-                </div>
-                <div className="pad2">
-                    <div className="info2">
-                        <div className="title2">Download our
-                            mobile apps</div>
-                        <div className="secondary2">Our dedicated patient engagement app and
-                            web portal allow you to access information instantaneously (no tedeous form, long calls,
-                            or administrative hassle) and securely</div>
-                        <div className="button2">
-                            <div className="buttonTitle">Download</div>
-                            <img className="arrow" src="/src/assets/arrow_down.png" />
+        <div className="infoPad">
+            <Container>
+                <>
+                    <div className="infoPad__row">
+                        <div className="infoPad__img">
+                            <img src="/src/assets/providers.png" />
+                        </div>
+                        <div className="infoPad__content">
+                            <h3 className="infoPad__title">Leading healthcare <br />providers</h3>
+                            <p className="infoPad__text">
+                                We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver
+                            </p>
+                            <button className="infoPad__btn" type='submit'>Learn more</button>
                         </div>
                     </div>
-                    <img className="img2" src="/src/assets/app.png" />
-                </div>
-            </div>
-        </>
+                    <div className="infoPad__row infoPad__row_reversed">
+                        <div className="infoPad__img">
+                            <img src="/src/assets/app.png" />
+                        </div>
+                        <div className="infoPad__content">
+                            <h3 className="infoPad__title">Download our <br />mobile apps</h3>
+                            <p className="infoPad__text">
+                                Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
+                            </p>
+                            <button className="infoPad__btn" type='submit'>
+                                Download
+                                <img src="/src/assets/arrow_down.png" />
+                            </button>
+                        </div>
+                    </div>
+                </>
+            </Container>
+        </div>
     )
 }
 
