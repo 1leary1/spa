@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Muli;
+    src: url(/src/fonts/Muli.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url(/src/fonts/Mulish.ttf);
+    font-weight: normal;
+}
+
+.greeting {
+    display: inline-flex;
+    place-items: center;
+    margin-bottom: 150px;
+}
+
+.img {
+    width: 693px;
+    height: 598px;
+}
+
+.title {
+    color: #000;
+
+    width: 400px;
+    font-family: Mulish;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: start;
+}
+
+.secondary {
+    color: #7D7987;
+
+    width: 400px;
+    font-family: Mulish;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: start;
+
+    margin-top: 25px;
+}
+
+.button {
+    color: #FFF;
+
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    background: #458FF6;
+
+    margin-top: 48px;
+}
+
+.button:hover {
+    background: #5490e5;
+}

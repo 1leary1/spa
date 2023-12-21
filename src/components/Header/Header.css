@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Muli;
+    src: url(/src/fonts/Muli.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url(/src/fonts/Mulish.ttf);
+    font-weight: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.logo {
+    display: block;
+    place-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.circle {
+    width: 41px;
+    height: 41px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #458FF6;
+
+    display: grid;
+    place-items: center;
+}
+
+.tLogo {
+    color: #FFF;
+
+    font-family: Mulish;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    padding-left: 1;
+}
+
+.siteName {
+    color: #233348;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 10px 40px;
+    flex-wrap: wrap;
+    color: var(--1f1534-hyfen, #1F1534);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s ease;
+}
+
+.topnav a:hover {
+    color: #458FF6;
+}
+
+.active {
+    color: var(--1f1534-hyfen, #1F1534) !important;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 1;
+}
