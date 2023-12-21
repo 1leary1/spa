@@ -11,10 +11,14 @@
 }
 
 .header {
+    margin-bottom: 40px;
+}
+
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 0;
+    gap: 30px;
 }
 
 .logo {
@@ -23,7 +27,7 @@
     display: inline-flex;
     text-decoration: none;
     gap: 10px;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .circle {
